@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "./App.scss";
 import { contents } from "./assets/data/data";
 import Content from "./components/Content";
 import Header from "./components/Header";
@@ -12,8 +11,9 @@ const StyledSection = styled.section`
   padding: 20px 40px;
 
 `
-
 function App() {
+  const ids = contents.map(el=>el.id);
+  console.log(ids)
   return (
     <main>
       <Header />
