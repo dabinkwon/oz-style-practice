@@ -23,23 +23,6 @@
 $tag-color: #d7fa00;
 $gray: rgb(160, 160, 160);
 
-.header-container {
-  @include flex($justify: space-between, $align: center);
-  padding: 20px 20px;
-  background-color: black;
-  ul {
-    @include flex($justify: center, $align: center, $gap: 20px);
-    li {
-      @include font($size: 16px, $weight: 400);
-      list-style: none;
-    }
-  }
-}
-
-section {
-  @include flex($justify: center, $align: center, $wrap: wrap, $gap: 20px);
-  padding: 20px 40px;
-}
 
 .content-container {
   @include flex($direction: column, $align: flex-start, $gap: 5px);
